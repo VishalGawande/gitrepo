@@ -14,11 +14,11 @@ EXPOSE 6379
 ENTRYPOINT ["/usr/bin/redis-server"]
 
 
-Build the Docker Image
+#Build the Docker Image
 -------------------------
 docker build -t redis-server .
 #it will read Dockerfile automatically and create an image with name redis-server
 
-Run a Redis-Server Instance
+#Run a Redis-Server Instance
 ----------------------------------
 docker run --name redis_instance -t redis-server
